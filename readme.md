@@ -6,10 +6,8 @@ The *real* problem is when you've just finished typing a long passionate reply t
 
 Flashback aims to solve this problem by saving all form input fields to local storage before unloading the page and recalling the stored data when the user revisits.
 
-#How it works  
-```$(element).flashback({options})```
-
 # Usage
+`$(element).flashback({options})`  
 To start using flashback simply add one of these snippets to the page, once the DOM is loaded.
 
 **Save all forms**  
