@@ -16,7 +16,7 @@ This will find every form element on the page and save all input, textarea, and 
 
 **Save a specific form**  
 This will find the form with the id of 'myForm' and save its fields.  
-```$(#myForm).flashback();```
+```$('#myForm').flashback();```
 
 # Options
   - **autoSaveInterval** - (integer) time in milliseconds (default is 0)  
