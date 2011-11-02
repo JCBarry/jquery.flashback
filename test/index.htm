@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>jQuery.Flashback Test Suite</title>
+  <!-- jQuery CDN and jquery.cookie plugin to aid in testing -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js"></script>
+
+  <!-- QUnit Test Suite -->
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script>
+
+  <!-- jQuery Flashback -->
+  <script type="text/javascript" src="../jquery.flashback.js"></script>
+
+  <!-- jQuery Flashback Tests -->
+  <script type="text/javascript" src="./test.flashback.js"></script>
+</head>
+<body>
+  <h1 id="qunit-header">jQuery Flashback Plugin</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+  <form>
+    <input type="text" name="FirstName" value="Rick" /><br />
+    <input type="text" name="LastName" value="Deckard" /><br />
+
+    <textarea name="occupation">I work in the Blade Runner Unit, I administer the Voight-Kampf test to suspected replicants.</textarea>
+    <input type="password" name="idnumber" value="B-263-54"/>
+
+    <select name="type">
+      <option value="human">Human</option>
+      <option value="replicant" selected="selected">Replicant</option>
+    </select>
+
+    <label>I have administered the Voight-Kampf test to:</label>
+    <input type="checkbox" name="voightkampf" value="replicant" /> A Replicant
+    <input type="checkbox" name="voightkampf" value="human" /> A Human
+    <input type="checkbox" name="voightkampf" value="myself" checked="checked" /> Myself
+
+    <label>It's your birthday. Someone gives you a calfskin wallet.</label>
+    <input type="radio" name="birthday" value="notaccept" checked="checked" /> I wouldn't accept it.
+    <input type="radio" name="birthday" value="report" /> I wouldn't accept it. Also, I'd report the person who gave it to me to the police.
+    <input type="radio" name="birthday" value="accept" /> I'd accept it and thank them.
+  </form>
+
+  <form>
+    <input type="text" name="FirstName" value="Obi-Wan" />
+    <input type="text" name="LastName" value="Kenobi" />
+
+    <textarea name="passengers">Myself, the boy, two droids... and no questions asked.</textarea>
+    <input type="password" name="password" value="You don't need to know the password" />
+
+    <select name="destination">
+      <option value="tatooine">Tatooine</option>
+      <option value="alderaan" selected="selected">Alderaan</option>
+      <option value="hoth">Hoth</option>
+      <option value="dagobah">Dagobah</option>
+    </select>
+
+    <label for="prescreen">Have you heard of the Millennium Falcon?</label>
+    <input type="radio" name="prescreen" value="yes" checked="checked"/> Yes, It's the ship that made the Kessel run in less than twelve parsecs!
+    <input type="radio" name="prescreen" value="no" /> No, Should I have?
+
+
+    <label for="additionalrequests">Any additional requests?</label>
+    <input type="checkbox" name="additionalrequests" value="imperial" checked="checked" /> We'd like to avoid any Imperial entanglements
+    <input type="checkbox" name="additionalrequests" value="lightspeed" /> We prefer a quick jump to Light Speed
+  </form>
+  </div>
+</body>
+</html>
